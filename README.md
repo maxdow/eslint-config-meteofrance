@@ -47,3 +47,13 @@ La méthode la plus directe pour linter son projet et de [créer une tache](http
 ```
 npm run lint
 ```
+
+###Intégration à l'IDE
+
+Dès lors que vous avez votre projet configuré avec un .eslintrc il sera utilisable dans un IDE digne de ce nom. 
+
+L'exemple le plus commun est celui de sublime texte qui propose un [plugin pour eslint](https://github.com/roadhump/SublimeLinter-eslint) . 
+
+Il en existe aussi pour [atom](https://atom.io/packages/linter-eslint) et [visualstudio](https://code.visualstudio.com/Docs/languages/javascript#_javascript-linters-eslint-jshint)
+
+Voici la [liste officielle des intégrations disponibles](http://eslint.org/docs/user-guide/integrations)
