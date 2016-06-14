@@ -1,0 +1,12 @@
+{
+  "name": "eslint-config-meteofrance",
+  "version": "1.0.0",
+  "description": "Configuration pour ESLINT des règles de codage de Météo-France",
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "author": "Maxime Warnier",
+  "license": "UNLICENSED"
+}
