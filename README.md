@@ -27,7 +27,16 @@ Vous pouvez aussi choisir de configurer eslint depuis le fichier package.json en
 }
 ```
 
+###Personnalisation des règles 
+
 Ce paquet propose une base de travail, selon votre projet il est possible de surcharger ces règles.
+
+En effet certaines règles proposées peuvent ne pas correspondre à l'environnement du projet ou ne pas être justifiées. Dans ce cas il est possible de les modifier dans la configuration de eslint.
+
+Par exemple, la règle 9 concernant l'utilisation obligatoire des points virgules peut être assouplie en utilisant *no-unexpected-multiline*. 
+Pour la règle 4, le forçage du mode strict peut être implicite suivant l'outillage ( utilisation de modules, outils de build ). Dans ce cas, il est possible de désactiver la règle en spécifiant *"impliedStrict" : true* dans les options du parser.
+
+Ces exemples sont commentés dans les sources du paquet. 
 
 D'autres options de configuration sont disponibles dans la [documentation de ESLint](http://eslint.org/docs/user-guide/configuring)
 
@@ -47,6 +56,10 @@ La méthode la plus directe pour linter son projet et de [créer une tache](http
 ```
 npm run lint
 ```
+
+
+
+
 
 ###Intégration à l'IDE
 
