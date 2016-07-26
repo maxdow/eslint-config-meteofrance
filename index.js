@@ -7,25 +7,36 @@ module.exports = {
     "parserOptions": {
       "ecmaVersion": 6,
       //"sourceType": "module"
+      //"ecmaFeatures":{
+      //  "impliedStrict" : true
+      //}
     },
     "extends": ["eslint:recommended"],
 
     "rules": {
+        //RegJavascript_4
+        //Le mode strict doit être utilisé
+        "strict" : 2,
 
         //
         // STYLE
         //
         //RegJavascript_9
-        "no-unexpected-multiline" : 2,
+        // pour éviter les points virgules systématiques mais avec la sécurité des cas particuliers
+        //"no-unexpected-multiline" : 2,
+
+        //RegJavascript_9
+        //les points virgules sont obligatoires
+        "semi" : 1,
         //
         // ES6
         //
 
-        // suggest using of const declaration for variables that are never modified after declared
+        // préférer l('utilisation de const si la variable n'est pas réasignée
         // RegJavascript 3
         "prefer-const": 1,
 
-        // require space before/after arrow function's arrow
+        // clarifie l'usage des fonctions fleche qui peuvent porter à confusion
         "arrow-spacing": 1,
 
         // Require parens in arrow function arguments
@@ -49,6 +60,10 @@ module.exports = {
         //
         // BEST PRACTICES
         //
+        //RegJavascript_7
+        //La notation littérale doit être utilisée pour créer des objets, tableaux, expressions régulières et primitives
+        "no-new-wrappers":2,
+
         "complexity" : [2,7],
         //RegJavascript_8
         "eqeqeq" : 2,
